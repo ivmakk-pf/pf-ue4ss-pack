@@ -33,11 +33,11 @@ It works when `Permafrost\Binaries\Win64\ue4ss\UE4SS.log` exists after the start
 
 ## Update an existing UE4SS
 
-You already have UE4SS, from an older download or from a mod manager. The zip holds the default `mods.txt` and `UE4SS-settings.ini`, which would replace yours. Keep them:
+You already have UE4SS, from an older download or from a mod manager. The zip holds the default `mods.txt`, `UE4SS-settings.ini`, and Blueprint mod load order (`load_order.txt`), which would replace yours. Keep them:
 
-1. Close the game. In `Permafrost\Binaries\Win64\ue4ss`, copy `Mods\mods.txt` and `UE4SS-settings.ini` somewhere outside the game folder.
+1. Close the game. In `Permafrost\Binaries\Win64\ue4ss`, copy `Mods\mods.txt`, `Mods\BPModLoaderMod\load_order.txt`, and `UE4SS-settings.ini` somewhere outside the game folder.
 2. Extract the zip into `Permafrost\Binaries\Win64`, as in [Install](#install). When asked, replace the existing files.
-3. Copy your `mods.txt` back into `ue4ss\Mods` and your `UE4SS-settings.ini` back into `ue4ss`, and replace the files from the zip.
+3. Copy your `mods.txt` back into `ue4ss\Mods`, your `load_order.txt` back into `ue4ss\Mods\BPModLoaderMod`, and your `UE4SS-settings.ini` back into `ue4ss`, and replace the files from the zip.
 
 Your mods stay in `ue4ss\Mods`. Their own settings files are not in the zip and stay as they are.
 
@@ -109,9 +109,9 @@ A newer UE4SS build is not tested with the mods until this pack moves to it.
 
 The pin is the build that the mods are tested against. It moves when that build stops working with the game, or when the mods move to a newer build.
 
-1. Download both zips of the new build from [experimental-latest](https://github.com/UE4SS-RE/RE-UE4SS/releases/tag/experimental-latest) into `cache/` at once: the page keeps no old zips. Put the build label, the release commit, the DLL commit (the `Git SHA` line of `UE4SS.log`), the file names, the URLs, and the SHA-256 values into `pack.json`.
+1. Download both zips of the new build from [experimental-latest](https://github.com/UE4SS-RE/RE-UE4SS/releases/tag/experimental-latest) into `cache/` at once: the page keeps no old zips. Put the build label, the release commit, the file names, the URLs, and the SHA-256 values into `pack.json`. The DLL commit comes from the test of step 3.
 2. Update the component list under [Credits and license](#credits-and-license) when the bundled components changed.
-3. Test on a clean install: move `dwmapi.dll` and `ue4ss\` out of `Permafrost\Binaries\Win64` (on the same drive, so links stay links), extract the new zip, start the game, and read `UE4SS.log` for the Git SHA and no error. Then put the old install back, run the update steps, and test the mods that require this pack.
+3. Test on a clean install: move `dwmapi.dll` and `ue4ss\` out of `Permafrost\Binaries\Win64` (on the same drive, so links stay links), extract the new zip, start the game, and read `UE4SS.log`: put its `Git SHA` into the DLL commit of `pack.json`, and check for no error. Then put the old install back, run the update steps, and test the mods that require this pack.
 4. Update the build values in this README, `nexus/`, and `CHANGELOG.md`, then release with the tag `v<build>` and both official zips as assets. Check that the digest of each asset equals its SHA-256 in `pack.json`.
 
 ### Test record
