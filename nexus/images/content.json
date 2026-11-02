@@ -9,8 +9,9 @@
     "out": "00-thumbnail.jpg",
     "screenshot": "main-menu.jpg",
     "crop": [1180, 880, 2276, 1280],
-    "layout": { "titleSize": 260 },
+    "layout": { "titleSize": 420, "left": 500, "gap": 10, "gradient": "linear-gradient(0deg, rgba(18,25,36,0.65), rgba(18,25,36,0.65))" },
     "title": [{ "text": "UE4SS", "accent": true }],
+    "titleImage": { "icon": "UI/Credits/Textures/T_Mainmenu_logo", "width": 920 },
     "rows": []
   },
   "background": {
