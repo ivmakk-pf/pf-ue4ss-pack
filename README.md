@@ -10,9 +10,11 @@ Mods for the Steam game [Permafrost](https://store.steampowered.com/app/2254990/
 
 ## Install
 
-Close the game. Download `UE4SS_v3.0.1-1196-g236adf26.zip` from [Releases](https://github.com/ivmakk-pf/pf-ue4ss-pack/releases) or from [Nexus Mods](https://www.nexusmods.com/permafrost/mods/42). The two files are the same. If you already have UE4SS, follow [Update an existing UE4SS](#update-an-existing-ue4ss) instead.
+If you already have UE4SS, follow [Update an existing UE4SS](#update-an-existing-ue4ss) instead.
 
-1. Extract the zip into the `Permafrost\Binaries\Win64` folder inside the game folder, the folder with `Permafrost-Win64-Shipping.exe`. Not into the top game folder with `Permafrost.exe`. Full path example for Steam: `C:\Program Files (x86)\Steam\steamapps\common\Permafrost\Permafrost\Binaries\Win64` *(to find the game folder in Steam: right-click Permafrost > Manage > Browse local files; in Epic Games or GOG Galaxy, open the install folder from the game's settings in the launcher)*.
+1. Close the game.
+2. Download `UE4SS_v3.0.1-1196-g236adf26.zip` from [Releases](https://github.com/ivmakk-pf/pf-ue4ss-pack/releases) or from [Nexus Mods](https://www.nexusmods.com/permafrost/mods/42). The two files are the same.
+3. Extract the zip into the `Permafrost\Binaries\Win64` folder inside the game folder, the folder with `Permafrost-Win64-Shipping.exe`. Not into the top game folder with `Permafrost.exe`. Full path example for Steam: `C:\Program Files (x86)\Steam\steamapps\common\Permafrost\Permafrost\Binaries\Win64` *(to find the game folder in Steam: right-click Permafrost > Manage > Browse local files; in Epic Games or GOG Galaxy, open the install folder from the game's settings in the launcher)*.
 
 Example after extraction (other game files omitted):
 
