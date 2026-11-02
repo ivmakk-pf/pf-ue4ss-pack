@@ -1,16 +1,16 @@
-# UE4SS Pack for Permafrost
+# UE4SS for Permafrost
 
 Mods for the Steam game [Permafrost](https://store.steampowered.com/app/2254990/Permafrost/) run on the mod loader [UE4SS](https://github.com/UE4SS-RE/RE-UE4SS). UE4SS publishes builds that work with this game only as a rolling download that changes every few days and keeps no old files. This pack keeps one fixed UE4SS build downloadable. Install it once, then install any mod that lists it as a requirement.
 
 - The files are the official UE4SS zips of build `3.0.1-1196`, byte for byte.
 - UE4SS is made by the UE4SS team. This pack is not made or endorsed by them.
-- This repo holds the pin of the build with its hashes, and the texts of the pack. The zips are in [Releases](https://github.com/ivmakk-pf/pf-ue4ss-pack/releases) and on [Nexus Mods](https://www.nexusmods.com/permafrost/mods/TBD).
+- This repo holds the pin of the build with its hashes, and the texts of the pack. The zips are in [Releases](https://github.com/ivmakk-pf/pf-ue4ss-pack/releases) and on [Nexus Mods](https://www.nexusmods.com/permafrost/mods/42).
 
 **This is unofficial.** UE4SS and the mods that use it are not made or supported by the developer of Permafrost. If you find a bug in the game, remove your mods and check that the bug still happens before you report it to the developer.
 
 ## Install
 
-Close the game. Download `UE4SS_v3.0.1-1196-g236adf26.zip` from [Releases](https://github.com/ivmakk-pf/pf-ue4ss-pack/releases) or from [Nexus Mods](https://www.nexusmods.com/permafrost/mods/TBD). The two files are the same. If you already have UE4SS, follow [Update an existing UE4SS](#update-an-existing-ue4ss) instead.
+Close the game. Download `UE4SS_v3.0.1-1196-g236adf26.zip` from [Releases](https://github.com/ivmakk-pf/pf-ue4ss-pack/releases) or from [Nexus Mods](https://www.nexusmods.com/permafrost/mods/42). The two files are the same. If you already have UE4SS, follow [Update an existing UE4SS](#update-an-existing-ue4ss) instead.
 
 1. Extract the zip into the `Permafrost\Binaries\Win64` folder inside the game folder, the folder with `Permafrost-Win64-Shipping.exe`. Not into the top game folder with `Permafrost.exe`. Full path example: `C:\Program Files (x86)\Steam\steamapps\common\Permafrost\Permafrost\Binaries\Win64` *(if you installed Steam or the game elsewhere, find the game folder in your Steam Library: right-click Permafrost > Manage > Browse local files)*.
 2. Start the game from Steam. Wait for the main menu, then quit before installing mods.

@@ -1,8 +1,8 @@
 # Nexus page
 
-- Title: UE4SS Pack for Permafrost
+- Title: UE4SS for Permafrost
 - Game domain: `permafrost` (add-mod page: https://www.nexusmods.com/permafrost/mods/add)
-- Mod id and URL: not published yet. Record them here after the page exists.
+- Mod id and URL: 42, https://www.nexusmods.com/permafrost/mods/42 (published 2026-11-03)
 - Category: Utilities (id 13, from `tools/nexus_categories.py permafrost`)
 - Version: `3.0.1-1196` (the label of the pinned UE4SS build: the official asset name without its `g<sha>` part)
 - Main file under Manage Files: `UE4SS Pack 3.0.1-1196`, the official zip `UE4SS_v3.0.1-1196-g236adf26.zip` from `cache/`, category Main files. It is the same file as the GitHub Release asset. Also mark it with "Set as primary file for download": the top Manual download button of the page gives the primary file. Turn "Allow mod manager download" off: the Permafrost Vortex Extension manages UE4SS by itself. File description (plain text, at most 255 characters):
@@ -14,7 +14,7 @@ The official UE4SS zip of build 3.0.1-1196, byte for byte. Extract into Permafro
 - Optional file under Manage Files: `UE4SS Pack 3.0.1-1196 zDEV`, the official zip `zDEV-UE4SS_v3.0.1-1196-g236adf26.zip` from `cache/`, category Optional files, version `3.0.1-1196`. Turn "Allow mod manager download" off. File description:
 
 ```
-For modders only. The official zDEV zip of the same build: UE4SS.pdb, the developer mods, and the docs. Install with the Update steps, then turn on the developer mods in mods.txt.
+For mod developers only. Players: download the main file instead. This is the official zDEV zip of the same build: UE4SS.pdb, the developer mods, and the docs. Install it with the Update steps, then turn on the developer mods in mods.txt.
 ```
 
 - A new pinned build: upload its 2 zips as the new main and optional files, and move the files of the old build to Old files. Do not delete them: players can go back to an older build.
