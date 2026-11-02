@@ -58,7 +58,7 @@ Install it with the steps of [Update an existing UE4SS](#update-an-existing-ue4s
 - **No `UE4SS.log` after the start.** Check the file location. `dwmapi.dll` must be in the same folder as `Permafrost-Win64-Shipping.exe` (`Permafrost\Binaries\Win64`), not beside `Permafrost.exe`. If the zip made an extra folder, move its contents up into `Permafrost\Binaries\Win64`.
 - **The antivirus warns about `dwmapi.dll`.** This file is how UE4SS starts: the game loads it because of its name, and it then loads UE4SS. Some antivirus programs flag this method. The file is the same as in the official download, and [Verify the download](#verify-the-download) shows how to check.
 - **A mod stopped after a game update.** A game update can break UE4SS or a mod. Check here and on the pages of your mods for an update. To play in the meantime, uninstall. Saves are not touched.
-- **The game does not start at all.** Uninstall, then in Steam use Properties, Installed Files, Verify integrity of game files.
+- **The game does not start at all.** Uninstall, then let your launcher verify the game files (in Steam: Properties > Installed Files > Verify integrity of game files).
 
 UE4SS bugs that are not about this pack belong to the [UE4SS project](https://github.com/UE4SS-RE/RE-UE4SS/issues).
 
