@@ -1,0 +1,27 @@
+{
+  "nexus": {
+    "name": "UE4SS Pack for Permafrost",
+    "author": "ivmakk0",
+    "category": "Utilities",
+    "summary": "The UE4SS mod loader for Permafrost, one fixed tested build."
+  },
+  "thumbnail": {
+    "out": "00-thumbnail.jpg",
+    "screenshot": "main-menu.jpg",
+    "crop": [1180, 880, 2276, 1280],
+    "layout": { "titleSize": 260 },
+    "title": [{ "text": "UE4SS", "accent": true }],
+    "rows": []
+  },
+  "background": {
+    "out": "background.jpg",
+    "screenshot": "main-menu.jpg",
+    "crop": [1880, 300, 1960, 560],
+    "darken": [
+      "rgba(18,25,36,0.3)",
+      "linear-gradient(90deg, rgba(18,25,36,0.85) 0%, rgba(18,25,36,0.4) 30%, rgba(18,25,36,0) 50%)",
+      "linear-gradient(0deg, rgba(18,25,36,0.7) 0%, rgba(18,25,36,0.2) 45%, rgba(18,25,36,0) 65%)"
+    ],
+    "overlays": []
+  }
+}

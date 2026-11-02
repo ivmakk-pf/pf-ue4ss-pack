@@ -1,0 +1,15 @@
+{
+  "build": "3.0.1-1196",
+  "commit": "236adf2667832375877669faac4b78872b4736b0",
+  "dllCommit": "1ceefac8b8c286f0fb3eb62b4aae075ff81df0bd",
+  "player": {
+    "archive": "UE4SS_v3.0.1-1196-g236adf26.zip",
+    "url": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental-latest/UE4SS_v3.0.1-1196-g236adf26.zip",
+    "sha256": "75DC8B081D324FE0598A87B26E37D13A84D3648CBB1D08EB48C514376407A11B"
+  },
+  "zdev": {
+    "archive": "zDEV-UE4SS_v3.0.1-1196-g236adf26.zip",
+    "url": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental-latest/zDEV-UE4SS_v3.0.1-1196-g236adf26.zip",
+    "sha256": "8C48F66ED91EAA1B60212101497918FFC108B8DBC846DE8CA8CBD09FBE4E6941"
+  }
+}

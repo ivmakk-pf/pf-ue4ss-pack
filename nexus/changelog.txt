@@ -1,0 +1,3 @@
+3.0.1-1196
+- The official UE4SS build 3.0.1-1196, files unchanged. Extract into Permafrost\Binaries\Win64.
+- Optional zDEV file for modders: the same build with debug symbols, developer mods, and docs.
