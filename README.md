@@ -1,6 +1,6 @@
 # UE4SS for Permafrost
 
-Mods for the Steam game [Permafrost](https://store.steampowered.com/app/2254990/Permafrost/) run on the mod loader [UE4SS](https://github.com/UE4SS-RE/RE-UE4SS). The UE4SS builds that work with this game are only on its official [experimental-latest release](https://github.com/UE4SS-RE/RE-UE4SS/releases/tag/experimental-latest). These are test builds, and any new build can bring bugs or changes that break mods. This release holds only the newest build, changes every few days, and keeps no old files. If you download from there, it is luck whether your mods work: it depends on which build was there that day, and whether that build works with the current game and your mods. This pack keeps one tested UE4SS build downloadable. Install it once, then install any mod that lists it as a requirement.
+Mods for the Steam game [Permafrost](https://store.steampowered.com/app/2254990/Permafrost/) run on the mod loader [UE4SS](https://github.com/UE4SS-RE/RE-UE4SS). UE4SS publishes the builds that work with this game only as its official [experimental-latest release](https://github.com/UE4SS-RE/RE-UE4SS/releases/tag/experimental-latest). Experimental builds are for testing, and any new one can bring bugs or changes that break mods. That release holds only the newest build, changes every few days, and keeps no old files. So if you download from there, whether your mods work is a matter of luck: it depends on which build was there that day, and whether it works with the current game and your mods. This pack keeps one of those experimental builds downloadable and unchanged. A mod that lists this pack as a requirement is made for this build, so you run the same UE4SS as its author. The build stays locked here. It changes only for a strong reason, for example a UE4SS fix for a bug that many players hit. Install it once, then install any mod that lists it as a requirement.
 
 - The files are the official UE4SS zips of build `3.0.1-1196`, byte for byte.
 - UE4SS is made by the UE4SS team. This pack is not made or endorsed by them.
@@ -102,11 +102,11 @@ The hash must equal the value in the table. A download from Nexus gets a longer 
 
 ## Why this build
 
-Permafrost runs on Unreal Engine 5.4. The last stable UE4SS release, `v3.0.1` of February 2024, is older than UE 5.4. The builds that work with this game are on the [experimental-latest](https://github.com/UE4SS-RE/RE-UE4SS/releases/tag/experimental-latest) page, which keeps only the newest build. The mods that require this pack are tested on build 1196, and the pack keeps that build downloadable after the experimental page moves on.
+Permafrost runs on Unreal Engine 5.4. The last stable UE4SS release, `v3.0.1` of February 2024, is older than UE 5.4. The builds that work with this game are on the [experimental-latest](https://github.com/UE4SS-RE/RE-UE4SS/releases/tag/experimental-latest) page, which keeps only the newest build. A mod that lists this pack as a requirement is made for build 1196, and the pack keeps that build downloadable after the experimental page moves on.
 
 Build 1196 (release commit `236adf2`) changed only one built-in Lua file. The UE4SS release workflow then reuses `UE4SS.dll` and `dwmapi.dll` of the build before, from commit `1ceefac8`. So `UE4SS.log` says `Git SHA #1ceefac8`, and that is correct for this build.
 
-A newer UE4SS build is not tested with the mods until this pack moves to it.
+The pack stays on this build. It moves to a newer build only for a strong reason, for example a UE4SS fix for a bug that many players hit.
 
 ## For maintainers
 
