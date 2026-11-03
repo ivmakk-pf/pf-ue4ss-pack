@@ -1,6 +1,6 @@
 # UE4SS for Permafrost
 
-Mods for the Steam game [Permafrost](https://store.steampowered.com/app/2254990/Permafrost/) run on the mod loader [UE4SS](https://github.com/UE4SS-RE/RE-UE4SS). The UE4SS builds that work with this game are only on its official [experimental download page](https://github.com/UE4SS-RE/RE-UE4SS/releases/tag/experimental-latest). These are test builds: any new build can bring new bugs or changes that break mods. The page holds only the newest build, changes every few days, and keeps no old files. So if you download from there, whether your mods work depends on luck: on which build was there on that day, and on whether it works with the current game and your mods. This pack keeps one tested UE4SS build downloadable. Install it once, then install any mod that lists it as a requirement.
+Mods for the Steam game [Permafrost](https://store.steampowered.com/app/2254990/Permafrost/) run on the mod loader [UE4SS](https://github.com/UE4SS-RE/RE-UE4SS). The UE4SS builds that work with this game are only on its official [experimental-latest release](https://github.com/UE4SS-RE/RE-UE4SS/releases/tag/experimental-latest). These are test builds, and any new build can bring bugs or changes that break mods. This release holds only the newest build, changes every few days, and keeps no old files. If you download from there, it is luck whether your mods work: it depends on which build was there that day, and whether that build works with the current game and your mods. This pack keeps one tested UE4SS build downloadable. Install it once, then install any mod that lists it as a requirement.
 
 - The files are the official UE4SS zips of build `3.0.1-1196`, byte for byte.
 - UE4SS is made by the UE4SS team. This pack is not made or endorsed by them.
@@ -14,7 +14,7 @@ If you already have UE4SS, follow [Update an existing UE4SS](#update-an-existing
 
 1. Close the game.
 2. Download `UE4SS_v3.0.1-1196-g236adf26.zip` from [Releases](https://github.com/ivmakk-pf/pf-ue4ss-pack/releases) or from [Nexus Mods](https://www.nexusmods.com/permafrost/mods/42). The two files are the same.
-3. Extract the zip into the `Permafrost\Binaries\Win64` folder inside the game folder, the folder with `Permafrost-Win64-Shipping.exe`. Not into the top game folder with `Permafrost.exe`. Full path example for Steam: `C:\Program Files (x86)\Steam\steamapps\common\Permafrost\Permafrost\Binaries\Win64` *(to find the game folder in Steam: right-click Permafrost > Manage > Browse local files; in Epic Games or GOG Galaxy, open the install folder from the game's settings in the launcher)*.
+3. Extract the zip into the `Permafrost\Binaries\Win64` folder inside the game folder. This is the folder with `Permafrost-Win64-Shipping.exe`. The top game folder with `Permafrost.exe` is the wrong place. Full path example for Steam: `C:\Program Files (x86)\Steam\steamapps\common\Permafrost\Permafrost\Binaries\Win64` *(to find the game folder in Steam: right-click Permafrost > Manage > Browse local files; in Epic Games or GOG Galaxy, open the install folder from the game's settings in the launcher)*.
 
 Example after extraction (other game files omitted):
 
@@ -42,31 +42,7 @@ You already have UE4SS, from an older download or from a mod manager. The zip ho
 
 Your mods stay in `ue4ss\Mods`. Their own settings files are not in the zip and stay as they are.
 
-**Vortex users:** the Permafrost Vortex Extension installs UE4SS by itself, always the newest build, and replaces this one when it sets up the game. With the extension, you get its build, not this one.
-
-## For mod authors
-
-If you test your mod on one UE4SS build and a player downloads a newer one, your mod runs on a build that you did not test. It can break, or it can work in a different way, and the bug reports are hard to trace. To prevent this, add [UE4SS for Permafrost](https://www.nexusmods.com/permafrost/mods/42) as a requirement of your mod: then you and your players use the same build. When this pack moves to a newer build, the change is in the [changelog](CHANGELOG.md) and the old files stay in the Nexus Files tab and in [Releases](https://github.com/ivmakk-pf/pf-ue4ss-pack/releases).
-
-### The zDEV file
-
-The optional file `zDEV-UE4SS_v3.0.1-1196-g236adf26.zip` is the official zDEV zip of the same build. Players do not need it. It has the same `UE4SS.dll` and `dwmapi.dll`, plus:
-
-- `UE4SS.pdb`, the debug symbols of `UE4SS.dll`;
-- the developer mods `EventViewerMod`, `KismetDebuggerMod`, `ActorDumperMod`, and `jsbLuaProfilerMod`;
-- the UE4SS docs and the files for other games' configs and type dumps;
-- a `UE4SS-settings.ini` with the GUI console on.
-
-Install it with the steps of [Update an existing UE4SS](#update-an-existing-ue4ss), so your `mods.txt` and settings stay. Then turn on each developer mod that you want: add a line `<Name> : 1` to `ue4ss\Mods\mods.txt` above the `Keybinds` line, for example `EventViewerMod : 1` or `KismetDebuggerMod : 1`. For the GUI console, set `ConsoleEnabled`, `GuiConsoleEnabled`, and `GuiConsoleVisible` to `1` in your `UE4SS-settings.ini`.
-
-## Problems
-
-- **No `UE4SS.log` after the start.** Check the file location. `dwmapi.dll` must be in the same folder as `Permafrost-Win64-Shipping.exe` (`Permafrost\Binaries\Win64`), not beside `Permafrost.exe`. If the zip made an extra folder, move its contents up into `Permafrost\Binaries\Win64`.
-- **The antivirus warns about `dwmapi.dll`.** This file is how UE4SS starts: the game loads it because of its name, and it then loads UE4SS. Some antivirus programs flag this method. The file is the same as in the official download, and [Verify the download](#verify-the-download) shows how to check.
-- **A mod stopped after a game update.** A game update can break UE4SS or a mod. Check here and on the pages of your mods for an update. To play in the meantime, uninstall. Saves are not touched.
-- **The game does not start at all.** Uninstall, then let your launcher verify the game files (in Steam: Properties > Installed Files > Verify integrity of game files).
-
-UE4SS bugs that are not about this pack belong to the [UE4SS project](https://github.com/UE4SS-RE/RE-UE4SS/issues).
+**Vortex users:** the [Permafrost Vortex Extension](https://www.nexusmods.com/site/mods/2466) installs UE4SS by itself. It always takes the newest build, and it replaces this one when it sets up the game. So if you use the extension, your game runs the extension's UE4SS build.
 
 ## Uninstall
 
@@ -80,6 +56,32 @@ ue4ss\
 ```
 
 Deleting the `ue4ss` folder also removes all installed mods and their settings. Keep all other files. The game then runs without mods. These steps do not delete your save files.
+
+## Troubleshooting
+
+- **No `UE4SS.log` after the start.** Check the file location. `dwmapi.dll` must be in the same folder as `Permafrost-Win64-Shipping.exe` (`Permafrost\Binaries\Win64`), not beside `Permafrost.exe`. If the zip made an extra folder, move its contents up into `Permafrost\Binaries\Win64`.
+- **The antivirus warns about `dwmapi.dll`.** This file is how UE4SS starts: the game loads it because of its name, and it then loads UE4SS. Some antivirus programs flag this method. The file is the same as in the official download, and [Verify the download](#verify-the-download) shows how to check.
+- **A mod stopped after a game update.** A game update can break UE4SS or a mod. Check here and on the pages of your mods for an update. To play in the meantime, uninstall. Saves are not touched.
+- **The game does not start at all.** Uninstall, then let your launcher verify the game files (in Steam: Properties > Installed Files > Verify integrity of game files).
+
+UE4SS bugs that are not about this pack belong to the [UE4SS project](https://github.com/UE4SS-RE/RE-UE4SS/issues).
+
+## For mod authors
+
+If you test your mod on one UE4SS build and a player downloads a newer one, your mod runs on a build that you did not test. It can break or work in a different way, and the bug reports are hard to trace. To prevent this, add [UE4SS for Permafrost](https://www.nexusmods.com/permafrost/mods/42) as a requirement of your mod, so you and your players use the same build. When this pack moves to a newer build, the [changelog](CHANGELOG.md) says so, and the old files stay in the Nexus Files tab and in [Releases](https://github.com/ivmakk-pf/pf-ue4ss-pack/releases).
+
+### The zDEV file
+
+The optional file `zDEV-UE4SS_v3.0.1-1196-g236adf26.zip` is the official zDEV zip of the same build. Players do not need it. It has the same `UE4SS.dll` and `dwmapi.dll`, plus:
+
+- `UE4SS.pdb`, the debug symbols of `UE4SS.dll`;
+- the developer mods `EventViewerMod`, `KismetDebuggerMod`, `ActorDumperMod`, and `jsbLuaProfilerMod`;
+- the UE4SS docs (also online: [UE4SS docs](https://docs.ue4ss.com/dev/)) and the files for other games' configs and type dumps;
+- a `UE4SS-settings.ini` with the GUI console on.
+
+Because the DLLs are the same as in the main file, you test your mod with this zDEV file on the same UE4SS that your players run. Take the zDEV file of the same version as the main file: a zDEV zip of another UE4SS build puts you back on a build that your players do not have.
+
+Install it with the steps of [Update an existing UE4SS](#update-an-existing-ue4ss), so your `mods.txt` and settings stay. Then turn on each developer mod that you want: add a line `<Name> : 1` to `ue4ss\Mods\mods.txt` above the `Keybinds` line, for example `EventViewerMod : 1` or `KismetDebuggerMod : 1`. For the GUI console, set `ConsoleEnabled`, `GuiConsoleEnabled`, and `GuiConsoleVisible` to `1` in your `UE4SS-settings.ini`.
 
 ## Verify the download
 
