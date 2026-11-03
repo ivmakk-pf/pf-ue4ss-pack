@@ -1,6 +1,6 @@
 # UE4SS for Permafrost
 
-Mods for the Steam game [Permafrost](https://store.steampowered.com/app/2254990/Permafrost/) run on the mod loader [UE4SS](https://github.com/UE4SS-RE/RE-UE4SS). UE4SS publishes builds that work with this game only as a rolling download that changes every few days and keeps no old files. This pack keeps one fixed UE4SS build downloadable. Install it once, then install any mod that lists it as a requirement.
+Mods for the Steam game [Permafrost](https://store.steampowered.com/app/2254990/Permafrost/) run on the mod loader [UE4SS](https://github.com/UE4SS-RE/RE-UE4SS). The UE4SS builds that work with this game are only on its official [experimental download page](https://github.com/UE4SS-RE/RE-UE4SS/releases/tag/experimental-latest). These are test builds: any new build can bring new bugs or changes that break mods. The page holds only the newest build, changes every few days, and keeps no old files. So if you download from there, whether your mods work depends on luck: on which build was there on that day, and on whether it works with the current game and your mods. This pack keeps one tested UE4SS build downloadable. Install it once, then install any mod that lists it as a requirement.
 
 - The files are the official UE4SS zips of build `3.0.1-1196`, byte for byte.
 - UE4SS is made by the UE4SS team. This pack is not made or endorsed by them.
@@ -43,6 +43,10 @@ You already have UE4SS, from an older download or from a mod manager. The zip ho
 Your mods stay in `ue4ss\Mods`. Their own settings files are not in the zip and stay as they are.
 
 **Vortex users:** the Permafrost Vortex Extension installs UE4SS by itself, always the newest build, and replaces this one when it sets up the game. With the extension, you get its build, not this one.
+
+## For mod authors
+
+If you test your mod on one UE4SS build and a player downloads a newer one, your mod runs on a build that you did not test. It can break, or it can work in a different way, and the bug reports are hard to trace. To prevent this, add [UE4SS for Permafrost](https://www.nexusmods.com/permafrost/mods/42) as a requirement of your mod: then you and your players use the same build. When this pack moves to a newer build, the change is in the [changelog](CHANGELOG.md) and the old files stay in the Nexus Files tab and in [Releases](https://github.com/ivmakk-pf/pf-ue4ss-pack/releases).
 
 ## The zDEV file (for modders)
 

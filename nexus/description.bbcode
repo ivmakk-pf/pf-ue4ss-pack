@@ -3,7 +3,9 @@ NOTE: It's a mod loader, NOT a mod! Install this pack only if another mod requir
 [size=4][b]What this is[/b][/size]
 UE4SS is the mod loader for Permafrost mods. Install this pack if a mod lists it as a requirement.
 
-UE4SS publishes the builds that work with this game only on its [url=https://github.com/UE4SS-RE/RE-UE4SS/releases/tag/experimental-latest]experimental page[/url], which changes every few days and keeps no old files. This pack keeps one build: the official UE4SS zip of build [b]3.0.1-1196[/b] ([font=Courier New]UE4SS_v3.0.1-1196-g236adf26.zip[/font]), byte for byte. The mods that require this pack are tested with it.
+[b]Why this page and not the UE4SS download?[/b] The UE4SS builds that work with this game are only on its official [url=https://github.com/UE4SS-RE/RE-UE4SS/releases/tag/experimental-latest]experimental download page[/url]. These are test builds: any new build can bring new bugs or changes that break mods. The page holds only the newest build, changes every few days, and keeps no old files. So if you download from there, whether your mods work depends on luck: on which build was there on that day, and on whether it works with the current game and your mods.
+
+This pack keeps one tested build: the official UE4SS zip of build [b]3.0.1-1196[/b] ([font=Courier New]UE4SS_v3.0.1-1196-g236adf26.zip[/font]), byte for byte. The mods that require this pack are tested with it.
 
 [b]This pack is unofficial.[/b] The Permafrost developer does not make, support, or endorse it. The UE4SS team does not endorse this pack either.
 
@@ -36,6 +38,9 @@ You already have UE4SS, from an older download or from a mod manager. The zip ho
 Your mods and their settings stay as they are.
 
 [b]Vortex users:[/b] the Permafrost Vortex Extension installs UE4SS by itself, always the newest build, and replaces this one when it sets up the game. With the extension, you get its build, not this one.
+
+[size=4][b]For mod authors[/b][/size]
+If you test your mod on one UE4SS build and a player downloads a newer one, your mod runs on a build that you did not test. It can break, or it can work in a different way, and the bug reports are hard to trace. To prevent this, add this page as a requirement of your mod: then you and your players use the same build. When this pack moves to a newer build, the change is in the changelog and the old files stay in the Files tab.
 
 [size=4][b]zDEV file (for modders)[/b][/size]
 The optional zDEV file is the official zDEV zip of the same build. Players do not need it. It has the same UE4SS, plus the debug symbols ([font=Courier New]UE4SS.pdb[/font]), the developer mods ([font=Courier New]EventViewerMod[/font], [font=Courier New]KismetDebuggerMod[/font], [font=Courier New]ActorDumperMod[/font], [font=Courier New]jsbLuaProfilerMod[/font]), and the UE4SS docs.
