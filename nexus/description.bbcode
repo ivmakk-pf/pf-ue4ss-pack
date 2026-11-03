@@ -42,7 +42,7 @@ Your mods and their settings stay as they are.
 [size=4][b]For mod authors[/b][/size]
 If you test your mod on one UE4SS build and a player downloads a newer one, your mod runs on a build that you did not test. It can break, or it can work in a different way, and the bug reports are hard to trace. To prevent this, add this page as a requirement of your mod: then you and your players use the same build. When this pack moves to a newer build, the change is in the changelog and the old files stay in the Files tab.
 
-[size=4][b]zDEV file (for modders)[/b][/size]
+[b]zDEV file[/b]
 The optional zDEV file is the official zDEV zip of the same build. Players do not need it. It has the same UE4SS, plus the debug symbols ([font=Courier New]UE4SS.pdb[/font]), the developer mods ([font=Courier New]EventViewerMod[/font], [font=Courier New]KismetDebuggerMod[/font], [font=Courier New]ActorDumperMod[/font], [font=Courier New]jsbLuaProfilerMod[/font]), and the UE4SS docs.
 
 Install it with the Update steps. Then add a line [font=Courier New]<Name> : 1[/font] to [font=Courier New]ue4ss\Mods\mods.txt[/font] above the [font=Courier New]Keybinds[/font] line for each developer mod that you want, for example [font=Courier New]EventViewerMod : 1[/font].

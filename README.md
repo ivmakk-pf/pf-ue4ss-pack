@@ -48,7 +48,7 @@ Your mods stay in `ue4ss\Mods`. Their own settings files are not in the zip and 
 
 If you test your mod on one UE4SS build and a player downloads a newer one, your mod runs on a build that you did not test. It can break, or it can work in a different way, and the bug reports are hard to trace. To prevent this, add [UE4SS for Permafrost](https://www.nexusmods.com/permafrost/mods/42) as a requirement of your mod: then you and your players use the same build. When this pack moves to a newer build, the change is in the [changelog](CHANGELOG.md) and the old files stay in the Nexus Files tab and in [Releases](https://github.com/ivmakk-pf/pf-ue4ss-pack/releases).
 
-## The zDEV file (for modders)
+### The zDEV file
 
 The optional file `zDEV-UE4SS_v3.0.1-1196-g236adf26.zip` is the official zDEV zip of the same build. Players do not need it. It has the same `UE4SS.dll` and `dwmapi.dll`, plus:
 
